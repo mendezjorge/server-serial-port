@@ -13,8 +13,7 @@
   "dependencies": {
     "express": "^4.17.2",
     "regedit": "^5.0.0",
-    "serialport": "^9.2.8",
-    "winreg": "^1.2.4"
+    "serialport": "^9.2.8"
   },
   "build": {
     "extraResources": [
