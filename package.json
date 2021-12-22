@@ -1,0 +1,30 @@
+{
+  "name": "node-basc-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index-process.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "regedit": "^5.0.0",
+    "serialport": "^9.2.8",
+    "winreg": "^1.2.4"
+  },
+  "build": {
+    "extraResources": [
+      {
+        "from": "node_modules/regedit/vbs",
+        "to": "regedit/vbs",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  }
+}
